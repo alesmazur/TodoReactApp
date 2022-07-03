@@ -6,11 +6,7 @@ import TodoList from "./components/TodoList.js";
 import Context from "./Context";
 
 function App() {
-  const [todos, setTodos] = React.useState([
-    { id: 1, complited: false, title: "Make some code " },
-    { id: 2, complited: false, title: "Make some noise" },
-    { id: 3, complited: false, title: "Make some sport" },
-  ]);
+  const [todos, setTodos] = React.useState([]);
 
   function toggleTodo(id) {
     setTodos(
